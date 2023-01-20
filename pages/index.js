@@ -19,8 +19,6 @@ export default function Home({ allPostsData }) {
         <Layout home>
             <Head>
                 <title>{siteTitle}</title>
-                <meta name="google" content="nositelinkssearchbox" key="sitelinks" />
-                <meta name="google" content="notranslate" key="notranslate" />
             </Head>
             <div className='cards'>
                 {allPostsData.map(({ id, date, title, image }) => (

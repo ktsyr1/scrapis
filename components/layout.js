@@ -4,7 +4,7 @@ import styles from './layout.module.css'
 import Link from 'next/link'
 
 const name = 'Riccardo'
-export const siteTitle = 'Riccardo\'s blog on Next.js'
+export const siteTitle = 'Scrapis blog'
 
 export default function Layout({ children, home }) {
     return (
