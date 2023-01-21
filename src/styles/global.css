@@ -2,11 +2,14 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
   direction: rtl;
+  font-family: "myFirstFont", sans-serif !important;
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url(/fonts/Droid.Arabic.Kufi.ttf);
 }
 
 * {

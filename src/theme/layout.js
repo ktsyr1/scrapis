@@ -1,9 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from './layout.module.css'
 import Link from 'next/link'
-
-const name = 'Riccardo'
+import menu from '../../data/lists/menu.json'
 export const siteTitle = 'Scrapis blog'
 
 export default function Layout({ children, home }) {
@@ -25,13 +23,18 @@ export default function Layout({ children, home }) {
                 <meta name="twitter:card" content="summary_large_image" />
             </Head>
             <nav>
-                <Link href='/'>Logo</Link>
+                <main>
+                    <Link href='/' className='box row' style={{ fontSize: 'xx-large' }}>
+                        <b >سكر</b>
+                        <b style={{ color: '#000' }}>ابي</b>
+                    </Link>
 
-                <ul>
-                    <li> <Link href='/'>test</Link> </li>
-                    <li> <Link href='/'>test</Link> </li>
-                    <li> <Link href='/'>test</Link> </li>
-                </ul>
+                    <ul>
+                        {menu.map((item) =>
+                            <li> <Link href={item.slug} key={item.slug}>{item.title}</Link> </li>)}
+
+                    </ul>
+                </main>
             </nav>
             <main>
                 {children}
