@@ -1,0 +1,54 @@
+---
+title: 'خطة عمل المنصة'
+date: '2022-02-28'
+image: 'Riccardo.jpg'
+
+---
+
+# الصفحة الرئيسية 
+* شرح عن الموقع 
+* اهم المقالات
+* احدث المقالات
+* المنتجات
+
+## شرح عن كل مقال
+
+* الشرح 
+* الروابط المرفقة
+
+## المسارات
+
+* اساسيات الويب
+    - html
+    - css
+    - javascript
+        - besic
+        - dom & bom
+    
+* تصميم الواجهات frontend
+    - تصميم الواجهات
+        -
+    - برمجة الواجهات
+        - react
+        - Angular
+        - vue
+
+* برمجة السيرفر
+    - nodejs
+        - expressjs
+        - nextjs
+    - php
+        - wordpress
+        - larvel
+        - php mvc
+    - java
+        - Spring
+    - go
+        - Gin 
+    - python
+        - django
+        - flask
+    - ruby
+        - ruby on Rails
+    - C#
+        - asp.net
