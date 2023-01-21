@@ -16,12 +16,9 @@ export async function getStaticProps() {
 export default function Home({ allPostsData }) {
     return (
         < >
-            <Head>
-                <title>{siteTitle}</title>
-            </Head>
             <div className='cards'>
                 {allPostsData.map(({ id, date, title, image }) => (
-                    <Link href={`/posts/${id}`} key={id} className='card'>
+                    <Link href={`/posts/${id}`} passHref key={id} className='card'>
                         <Image src={'/images/' + image} alt={title} width='300' height={'200'} />
                         <p> {title}</p>
                         <small>

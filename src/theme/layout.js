@@ -20,18 +20,19 @@ export default function Layout({ children, home }) {
                     )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
                 />
                 <meta name="og:title" content={siteTitle} />
+                <title>{siteTitle} </title>
                 <meta name="twitter:card" content="summary_large_image" />
             </Head>
             <nav>
                 <main>
-                    <Link href='/' className='box row' style={{ fontSize: 'xx-large' }}>
+                    <Link href='/' passHref className='box row' style={{ fontSize: 'xx-large' }}>
                         <b >سكر</b>
                         <b style={{ color: '#000' }}>ابي</b>
                     </Link>
 
                     <ul>
                         {menu.map((item) =>
-                            <li> <Link href={item.slug} key={item.slug}>{item.title}</Link> </li>)}
+                            <li key={item.slug}> <Link href={item.slug}>{item.title}</Link> </li>)}
 
                     </ul>
                 </main>
