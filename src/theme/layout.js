@@ -24,7 +24,7 @@ export default function Layout({ children, home }) {
                 <meta name="twitter:card" content="summary_large_image" />
             </Head>
             <nav>
-                <main>
+                <header>
                     <Link href='/' passHref className='box row' style={{ fontSize: 'xx-large' }}>
                         <b >سكر</b>
                         <b style={{ color: '#000' }}>ابي</b>
@@ -35,7 +35,7 @@ export default function Layout({ children, home }) {
                             <li key={item.slug}> <Link href={item.slug}>{item.title}</Link> </li>)}
 
                     </ul>
-                </main>
+                </header>
             </nav>
             <main>
                 {children}

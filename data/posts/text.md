@@ -1,7 +1,7 @@
 ---
 title: 'خطة عمل المنصة'
 date: '2022-02-28'
-image: 'Riccardo.jpg'
+image: 'small.png'
 
 ---
 
