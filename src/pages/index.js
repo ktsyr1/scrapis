@@ -14,13 +14,13 @@ export default function Home({ allPostsData }) {
     return (
         <div className='cards'>
             <SEO />
-            {allPostsData.map((post) => <Card {...post} />)}
+            {allPostsData.map((post) => <Card {...post} key={post.id} />)}
         </div>
     )
 }
 function Card({ id, date, title, image }) {
     return (
-        <Link href={`/posts/${id}`} passHref key={id} className='card'>
+        <Link href={`/posts/${id}`} passHref className='card'>
             <Image src={'/images/' + image} alt={title} width='300' height={'200'} />
             <p> {title}</p>
             <small>
