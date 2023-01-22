@@ -1,7 +1,7 @@
 ---
 title: ' برمجة الويب 2023 '
 date: '2023-01-22'
-image: 'wordpress.png'
+image: 'web-dev.png'
 
 ---
  
