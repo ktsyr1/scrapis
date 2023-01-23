@@ -31,7 +31,7 @@ export default function Post({ postData }) {
             <div  >
                 <Date dateString={postData.date} />
             </div>
-            <p style={{color:length<350?'red':'#00d500'}}>عدد الكلمات {length}</p>
+            <p style={{ color: length < 350 ? 'red' : '#00d500' }}>عدد الكلمات {length}</p>
             <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
         </article>
     )
