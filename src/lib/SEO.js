@@ -5,8 +5,8 @@ import { useRouter } from "next/router";
 */
 
 export default function SEO({
-    title = "بيسكتوب اندرويد - Pesktop android",
-    description = '  تحميل جميع برامج الويندوز والأندرويد والماك والأنظمة مع الكراكات بروابط مباشرة وسريعة وتدعم الأستكمال مع امكانية تحميل الكراكات منفصلة لكل البرامج',
+    title = "scrapi - سكرابي",
+    description = 'منصة لصناع المحتوى و الطلاب',
     canonical = undefined,
     image = '/image/logo.png'
 }) {
