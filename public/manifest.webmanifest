@@ -1,0 +1,32 @@
+{
+  
+  "dir": "rtl",
+  "lang": "ar",
+  "name": "scrapi - سكرابي",
+  "short_name": "scrapi",
+  "start_url": "/",
+  "id": "/",
+  "scope": "/",
+  "background_color": "#91c8ff",
+  "theme_color": "#91c8ff",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "./images/logo.png",
+      "sizes": "110x110",
+      "type": "image/png",
+      "purpose": "any maskable"
+    } ,{
+      "src": "./images/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    } ,{
+      "src": "./images/logo.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    } 
+  ]
+} 
