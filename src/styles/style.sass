@@ -37,6 +37,7 @@ main
             flex-direction: column
             justify-content: space-between
             width: 300px
+            height: max-content
             margin: 10px
             border: 1px solid #ddd
             border-radius: 10px
@@ -62,11 +63,13 @@ article
         font-size: small
 footer
     display: flex
-    height: 150px
-    border-top: 1px dashed #03a9f4
+    height: max-content
     align-items: center
-    justify-content: center
-
+    justify-content: space-around
+    padding-top: 20px
+    box-shadow: -1px -2px 18px rgb(0 0 0 / 10%)
+    a
+        padding: 5px 0
 @media only screen and  (max-width: 500px  )
     header
         display: flex

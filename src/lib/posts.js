@@ -9,9 +9,8 @@ const postsDirectory = path.join(process.cwd(), 'data/posts')
 export function getSortedPostsData() {
     // Get file names under /posts
     const fileNames = fs.readdirSync(postsDirectory)
-        // console.log(fileNames);
-        // let filter = fileNames .filter 
-    const allPostsData = fileNames.map(fileName => {
+    // let filter = fileNames .filter 
+    let allPostsData = fileNames.map(fileName => {
         // Remove ".md" from file name to get id
         const id = fileName.replace(/\.md$/, '')
 
@@ -23,40 +22,25 @@ export function getSortedPostsData() {
         const matterResult = matter(fileContents)
 
         // Combine the data with the id
-        return {
-            id,
-            ...matterResult.data
-        }
+        if (!matterResult.data?.edit) {
+            return {
+                id,
+                ...matterResult.data
+            }
+        } else return
     })
+    allPostsData = allPostsData.filter(post => typeof post === "object")
 
     // Sort posts by date
     return allPostsData.sort(({ date: a }, { date: b }) => {
-        if (a < b) {
-            return 1
-        } else if (a > b) {
-            return -1
-        } else {
-            return 0
-        }
+        if (a < b) return 1
+        else if (a > b) return -1
+        else return 0
     })
 }
 
 export function getAllPostIds() {
     const fileNames = fs.readdirSync(postsDirectory)
-
-    // Returns an array that looks like this:
-    // [
-    //     {
-    //         params: {
-    //             id: 'ssg-ssr'
-    //         }
-    //     },
-    //     {
-    //         params: {
-    //             id: 'pre-rendering'
-    //         }
-    //     }
-    // ]
     return fileNames.map(fileName => {
         return {
             params: {

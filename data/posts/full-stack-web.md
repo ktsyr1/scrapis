@@ -2,8 +2,8 @@
 title: 'برمجة الواجهة الخلفية backend'
 date: '2023-01-23'
 image: 'scrapi.png'
+edit: true
 ---
-
 
 * **[MERN stack](/posts/Mern-stack)** : هذا المسار يتضمن العمل بأطر التطبيقات الذكية الذاتية الخلفية والأمامية، باستخدام MongoDB، ExpressJS، ReactJS، و Node.js.
 
