@@ -17,7 +17,7 @@ export default function Home({ allPostsData }) {
             {/* Hero  */}
             <div className='aitem box grid p-4 space' style={{ maxWidth: 700, margin: '0 auto' }}>
                 {/* content */}
-                <div >
+                <div className='box col space'>
                     <h1>سكرابي</h1>
                     <p style={{ maxWidth: '250px' }}>اختر مسارك وتعلم ولدينا الكثير من الافكار نقوم بها معا</p>
                     <Link href={'/posts/web-dev'} className='btn ' >ابداء التعلم</Link>
@@ -25,6 +25,7 @@ export default function Home({ allPostsData }) {
                 {/* image */}
                 <Image src={'/images/Hero.png'} alt='Hero image' loading="lazy" width={320} height={225} class="md-none sm-none" />
             </div>
+            <br/>
             <div className='cards'>
                 <h2 style={{ width: "100%" }}>اخر المقالات</h2>
                 {allPostsData.map((post) => <Card {...post} key={post.id} />)}
