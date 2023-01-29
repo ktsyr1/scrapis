@@ -1,0 +1,81 @@
+---
+title: 'تعلم مسار React'
+date: '2023-01-29'
+image: 'react.png'
+
+# edit: true
+
+---  
+هي مكتبة JavaScript لبناء واجهات المستخدم. وهي تركز بشكل أساسي على بناء مكونات واجهة مستخدم قابلة لإعادة الاستخدام وتستخدم DOM الظاهري (نموذج كائن المستند) لتحسين الأداء عن طريق تقليل عدد التغييرات التي تم إجراؤها على DOM الفعلي. كما يسمح بالتكامل السهل مع المكتبات والأطر الأخرى. 
+ 
+
+## المتطلبات
+
+يجب ان تكون ملم [باساسيات الويب](web-basics) لتستطيع التعلم بسلاسة ومرونة و الاستفادة من كل ميزات react.
+
+من المهم تعلم github فانه يساعدك في التحكم في اصدارات الكود الخاص بك و نشر موقعك على استضافات تزامن الكود الخاص وتجعله للعامة .
+
+## المواد التعليمية
+
+* es6 
+* react basic 
+* react hooks 
+* redux
+
+## مصادر التعلم
+
+* تعلم es6+
+
+    [JavaScript | ES6 , ES7 , ES8 , ES9 , ES10  دورة](https://www.youtube.com/playlist?list=PLMYF6NkLrdN_k2EJGe_33JM7q7sBTOwJi)  - محمد عيسى
+
+    [جافا سكريبت الجديدة 2015](https://www.youtube.com/watch?v=iV5bcdGrNBI) - نور حمصي 
+
+    [تعلم ECMAScript 6](https://www.youtube.com/playlist?list=PLDoPjvoNmBAy3siU1b04xY24ZlstofO9M) - اسامة الزيرو
+
+* بداية تعلم اساسيات  **react**
+
+    [اساسيات react](https://www.youtube.com/playlist?list=PLtFbQRDJ11kEjXWZmwkOV-vfXmrEEsuEW) - حمزة نبيل
+
+    [ReactJS من الصفر إلى الإحتراف](https://www.youtube.com/playlist?list=PL1FWK-sgJ9el-axKTMU_1l5PEyv7tn-wk) -  بشير شلاح
+
+    [رياكت بتتكلم عربي](https://www.youtube.com/playlist?list=PLPTNqXpQ2tbhYmCeh8H4TR_UokYUxhD8R) - نور حمصي
+
+* react hooks
+
+    [React Hooks - شرح عربي](https://www.youtube.com/playlist?list=PL1FWK-sgJ9elLBrEyAXK74pM37lJtDzut) - بشير شلاح
+
+* redux
+
+    [اساسيات redux](https://www.youtube.com/playlist?list=PLtFbQRDJ11kFPIchLt4xI6sBVxFUK1PBD) - حمزة نبيل
+
+    [redux](https://www.youtube.com/playlist?list=PL1FWK-sgJ9emg4u0GSQMhY5AFVjd9MHim) - بشير شلاح
+ 
+
+## تقنيات مساعدة 
+
+* Sass/scss / styled component 
+* Comment line
+
+## المستوى المتقدم  
+* typeScript 
+
+    [typeScript](https://www.youtube.com/playlist?list=PLtFbQRDJ11kH1RHmJD7DYtV9RXY42Al5g) - حمزة نبيل
+
+    [اساسيات typeScript 2022](https://www.youtube.com/playlist?list=PLDoPjvoNmBAy532K9M_fjiAmrJ0gkCyLJ) - اسامة الزيرو
+    
+* Testing
+* nextjs 
+
+    [NextJS Tutorial Arabic](https://www.youtube.com/playlist?list=PLtFbQRDJ11kENRrEUG6fmPSVVh7WWijbz) - حمزة نبيل
+
+## التالي 
+
+**full stack** 
+
+بامكانك استخدام اي مسار `back-end` يدعم `Restful api` وافضل خيار يمكنك استخدامه `nodejs expressjs`
+
+حيث بعد تعلمه بامكانك استخدامه ضمن `nextjs` في مسار `pages/api` الذي هو مبني على `expressjs` .
+خيارات اخرى بامكانك استخدم اي اطار عمل تعمل به مثل `laraval, django, flask  , spring..` عبر `Restful api`  او  `graphQL`
+
+ 
+  

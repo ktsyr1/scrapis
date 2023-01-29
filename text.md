@@ -18,16 +18,15 @@ image: 'small.png'
 
 ## المسارات
 
-* اساسيات الويب
+<!-- * اساسيات الويب
     - html
     - css
     - javascript
         - besic
-        - dom & bom
+        - dom & bom -->
     
 * تصميم الواجهات frontend
-    - تصميم الواجهات
-        -
+    <!-- - تصميم الواجهات -->
     - برمجة الواجهات
         - react
         - Angular
