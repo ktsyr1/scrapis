@@ -12,9 +12,12 @@ export async function getStaticProps() {
 
 export default function Home({ allPostsData }) {
     return (
-        <div className='cards'>
+        <div> 
             <SEO />
-            {allPostsData.map((post) => <Card {...post} key={post.id} />)}
+            {/* Hero  */}
+            <div className='cards'>
+                {allPostsData.map((post) => <Card {...post} key={post.id} />)}
+            </div>
         </div>
     )
 }
