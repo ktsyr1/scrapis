@@ -3,9 +3,9 @@ import { useRouter } from "next/router";
 /**
     * @param {this.props} `title` `description` `canonical` `image`
 */
-
+export let Title = "scrapi - سكرابي"
 export default function SEO({
-    title = "scrapi - سكرابي",
+    title = Title,
     description = 'منصة لصناع المحتوى و الطلاب',
     canonical = undefined,
     image = '/image/logo.png'
