@@ -11,27 +11,22 @@ image: 'react.png'
 
 ## المتطلبات
 
-يجب ان تكون ملم [باساسيات الويب](web-basics) لتستطيع التعلم بسلاسة ومرونة و الاستفادة من كل ميزات react.
+- Html5
+- Css3
+- Javascript basics
+- Javascript dom & bom
+- es6
+- GitHub
 
-من المهم تعلم github فانه يساعدك في التحكم في اصدارات الكود الخاص بك و نشر موقعك على استضافات تزامن الكود الخاص وتجعله للعامة .
+[اساسيات الويب](web-basics) 
 
 ## المواد التعليمية
-
-* es6 
+ 
 * react basic 
 * react hooks 
 * redux
 
 ## مصادر التعلم
-
-* تعلم es6+
-
-    [JavaScript | ES6 , ES7 , ES8 , ES9 , ES10  دورة](https://www.youtube.com/playlist?list=PLMYF6NkLrdN_k2EJGe_33JM7q7sBTOwJi)  - محمد عيسى
-
-    [جافا سكريبت الجديدة 2015](https://www.youtube.com/watch?v=iV5bcdGrNBI) - نور حمصي 
-
-    [تعلم ECMAScript 6](https://www.youtube.com/playlist?list=PLDoPjvoNmBAy3siU1b04xY24ZlstofO9M) - اسامة الزيرو
-
 * بداية تعلم اساسيات  **react**
 
     [اساسيات react](https://www.youtube.com/playlist?list=PLtFbQRDJ11kEjXWZmwkOV-vfXmrEEsuEW) - حمزة نبيل
@@ -63,15 +58,14 @@ image: 'react.png'
 
     [اساسيات typeScript 2022](https://www.youtube.com/playlist?list=PLDoPjvoNmBAy532K9M_fjiAmrJ0gkCyLJ) - اسامة الزيرو
     
-* Testing
 * nextjs 
 
     [NextJS Tutorial Arabic](https://www.youtube.com/playlist?list=PLtFbQRDJ11kENRrEUG6fmPSVVh7WWijbz) - حمزة نبيل
 
+* Testing
 ## التالي 
 
 **full stack** 
-
 بامكانك استخدام اي مسار `back-end` يدعم `Restful api` وافضل خيار يمكنك استخدامه `nodejs expressjs`
 
 حيث بعد تعلمه بامكانك استخدامه ضمن `nextjs` في مسار `pages/api` الذي هو مبني على `expressjs` .

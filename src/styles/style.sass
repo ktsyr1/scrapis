@@ -2,6 +2,22 @@ html
     a
         color: #0070f3
         text-decoration: none
+    body
+        padding: 0
+        margin: 0
+        line-height: 1.6
+        font-size: 18px
+        direction: rtl
+        font-family: "myFirstFont", sans-serif !important
+        background-color: #eee
+
+@font-face
+    font-family: myFirstFont
+    src: url(/fonts/Droid.Arabic.Kufi.ttf)
+
+*
+    box-sizing: border-box
+
 nav
     top: 0
     position: fixed
@@ -23,6 +39,8 @@ nav
         padding: 0
         margin: 0
         justify-content: center
+        // overflow: scroll
+        width: max-content
         li
             margin: 10px
 main
@@ -57,8 +75,11 @@ main
                 padding: 10px
 article
     max-width: 700px
-    margin: 0 auto
+    margin: 10px auto
     padding: 10px
+    background-color: #fff
+    border-radius: 10px
+
     em code
         padding: 10px
     code
@@ -75,8 +96,19 @@ footer
     height: max-content
     align-items: flex-start
     justify-content: space-around
+    flex-wrap: wrap
     padding-top: 20px
+    background-color: #fff
     box-shadow: -1px -2px 18px rgb(0 0 0 / 10%)
+    div
+        width: 300px
+        &:nth-child(4)
+
+            min-width: -webkit-fill-available
+            text-align: center
+            padding: 20px
+            box-shadow: 1px 2px 18px rgb(0 0 0 / 10%)
+
     a
         padding: 5px 0
 @media only screen and  (max-width: 500px  )

@@ -33,7 +33,7 @@ image: 'small.png'
         - vue
 
 * برمجة السيرفر
-    - nodejs
+    <!-- - nodejs
         - expressjs
         - nextjs
     - php
@@ -50,4 +50,31 @@ image: 'small.png'
     - ruby
         - ruby on Rails
     - C#
-        - asp.net
+        - asp.net -->
+## studnt models
+
+```js es6 require 
+//   models
+
+let Schema ={
+    User: {
+        userID : 1,
+        name: 'example user',
+        email: 'example@example.com',
+        phone: '70123456',
+        verificationCode: '', // randomNumber length 3 || 4
+        // verified: true ,
+    },
+    Stack:{
+        name: 'example stack',
+        des:'',
+        join:{
+            enable: false,
+            embedd: 'https://...'
+        },
+    },
+    Session:{
+        userID : 1,
+    }
+}
+```

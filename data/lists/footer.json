@@ -10,7 +10,7 @@
         },
         {
             "title": "برمجة الخوادم backend",
-            "slug": "/posts/"
+            "slug": "/posts/backend"
         }
     ],
     "fast": [
@@ -20,7 +20,7 @@
         },
         {
             "title": "الجديد",
-            "slug": "/"
+            "slug": "/#"
         }
     ]
 }

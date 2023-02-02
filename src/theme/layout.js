@@ -48,6 +48,13 @@ export default function Layout({ children, home }) {
                     <b>روابط تعليمية</b>
                     <Lists data={footer.learn} />
                 </div>
+                <div >
+                    <p>هذا الموقع برعاية 🤑</p>
+                    <a href='https://ktsyr1.netlify.app' >
+                    قتيبة 🥰
+                    </a>
+                </div>
+                <div>جميع الحقوق محفوظة  scrapi lab @2023</div>
             </footer>
         </>
     )

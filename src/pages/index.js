@@ -23,7 +23,7 @@ export default function Home({ allPostsData }) {
                     <Link href={'/posts/web-dev'} className='btn ' >ابداء التعلم</Link>
                 </div>
                 {/* image */}
-                <Image src={'/images/Hero.png'} alt='Hero image' loading="lazy" width={320} height={225} class="md-none sm-none" />
+                <Image src={'/images/Hero.png'} alt='Hero image' loading="lazy" width={320} height={225} className="md-none sm-none" />
             </div>
             <br/>
             <div className='cards'>

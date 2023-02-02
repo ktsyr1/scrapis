@@ -36,6 +36,15 @@ image: 'web-basics.png'
 
 * خبرة جيدة في مهارات البحث
 * ان تكون شغوف بالويب
+## المواد التعليمية
+- Html5
+- Css3
+- اساسيات JavaScript  
+- JavaScript dom & bom
+- JavaScript es6+
+- JavaScript oop
+- Github
+
 
 ## بداية رحلة التعمل 
 
@@ -56,6 +65,10 @@ image: 'web-basics.png'
 [كورس css 2021 ](https://www.youtube.com/playlist?list=PLDoPjvoNmBAzjsz06gkzlSrlev53MGIKe)
 
 [كورس JavaScript 2021 ](https://www.youtube.com/playlist?list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv)
+
+[تعلم ECMAScript 6](https://www.youtube.com/playlist?list=PLDoPjvoNmBAy3siU1b04xY24ZlstofO9M)
+
+[تعلم JavaScript OOP](https://www.youtube.com/playlist?list=PLDoPjvoNmBAzLyvrWPwMw6bbBlTwPxgLF)
 
 [تعلم Git و Github](https://www.youtube.com/playlist?list=PLDoPjvoNmBAw4eOj58MZPakHjaO3frVMF)
 
@@ -96,7 +109,7 @@ image: 'web-basics.png'
 
 بامكانك البداء بانشاء مدونتك الاولى وتحسينها بحسب خبرتك التي تعلمتها من هذا المسار.
 
-**تصميم وبرمجة واجهات المواقع Frontend**
+**[تصميم وبرمجة واجهات المواقع Frontend](frontend)**
 
 بامكانك المتابعة في هذا المسار لتصميم وبرمجة واجهات مواقع الويب وفيه كثير تقنيات من الممكن ان تبرمج موقعك كاملا بنفسك بدون الحاجة في بعض المشاريع لخبرة في backend والاستعاضة بتقنيات ثانية .
 
