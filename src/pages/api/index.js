@@ -41,6 +41,6 @@ export const writeData = async () => {
     const response = await sheets.spreadsheets.values.update(request);
     console.log(response.data);
 }
-export default async function (req, res, next) {
+export default async function app (req, res, next) {
     return await readData()
 }

@@ -25,7 +25,7 @@ export default function Layout({ children, home }) {
             <nav>
                 <header>
                     <Link href='/' passHref className='box row' style={{ fontSize: 'xx-large' }}>
-                        <b >سكر</b>
+                        <b  className='text-Ui' >سكر</b>
                         <b style={{ color: '#000' }}>ابي</b>
                     </Link>
 

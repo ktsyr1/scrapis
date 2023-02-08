@@ -1,17 +1,17 @@
-import Head from 'next/head';
 import Date from '../../theme/date';
 import { getAllPostIds, getPostData } from '../../lib/posts';
 import Image from 'next/image';
 import SEO from 'lib/SEO';
 import { useEffect, useState } from 'react';
+import Card, { Courses } from 'theme/card';
 
-export async function getStaticProps({ params }) {
-    const postData = await getPostData(params.id)
-    return { props: { postData } }
-}
 export async function getStaticPaths() {
     const paths = getAllPostIds()
     return { paths, fallback: false }
+}
+export async function getStaticProps({ params }) {
+    const postData = await getPostData(params.id)
+    return { props: { postData } }
 }
 export default function Post({ postData }) {
     let [length, setLength] = useState(0)
@@ -19,7 +19,7 @@ export default function Post({ postData }) {
         let res = document.querySelector('article').innerText.split(' ').length
         setLength(res)
 
-    })
+    }, [])
     return (
         <article>
             <SEO
@@ -33,6 +33,8 @@ export default function Post({ postData }) {
             </div>
             <p style={{ color: length < 350 ? 'red' : '#00d500' }}>عدد الكلمات {length}</p>
             <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+            <h2>الكورسات التعليمية</h2>
+            <Courses data={postData.courses} />
         </article>
     )
 }
