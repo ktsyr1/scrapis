@@ -33,7 +33,6 @@ export default function Post({ postData }) {
             </div>
             <p style={{ color: length < 350 ? 'red' : '#00d500' }}>عدد الكلمات {length}</p>
             <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-            <h2>الكورسات التعليمية</h2>
             <Courses data={postData.courses} />
         </article>
     )

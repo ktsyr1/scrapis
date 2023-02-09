@@ -21,10 +21,12 @@ export default function Card({ id, date, title, image }) {
  */
 export function Courses({ data }) {
     return (
-        <div className='cards ' >
-            {data?.map((one, i) => <Course key={i} {...one} />)}
-        </div>
-
+        <>
+            <h2>الكورسات التعليمية</h2> 
+            <div className='cards ' >
+                {data?.map((one, i) => <Course key={i} {...one} />)}
+            </div>
+        </>
     )
 }
 export function Course({ title, mr, href, note }) {
