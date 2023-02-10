@@ -1,3 +1,10 @@
+:root
+    --color: #fff
+    --colorx: #eee
+    --color-ui: #03a9f4
+    --color-uix: #5b5ef3
+    --color-lg-ui: linear-gradient(to right, var(--color-ui), var(--color-uix))
+    --sh: 1px 2px 18px rgb(0 0 0 / 10%)
 html
     a
         color: #0070f3
@@ -21,10 +28,10 @@ html
 nav
     top: 0
     position: fixed
-    background-color: #fff
+    background-color: var(--color )
     width: -webkit-fill-available
     padding: 10px 20px
-    box-shadow: 1px 2px 18px rgb(0 0 0 / 10%)
+    box-shadow: var(--sh)
     header
         padding: 0 1.5rem
         max-width: 800px
@@ -39,14 +46,13 @@ nav
         padding: 0
         margin: 0
         justify-content: center
-        // overflow: scroll
         width: max-content
         li
             margin: 10px
 main
     margin-top: 120px
     .hero
-        background-image: linear-gradient(360deg, #eeeeee, #c7e1ff, #eeeeee )
+        background-image: linear-gradient(360deg, var(--colorx), #c7e1ff, var(--colorx) )
         h1
             font-size: 3rem
     .cards
@@ -66,9 +72,9 @@ main
             height: max-content
             margin: 10px
             border: 1px solid #ddd
-            background-color: #fff
+            background-color: var(--color)
             border-radius: 10px
-            box-shadow: 1px 2px 18px rgb(0 0 0 / 10%)
+            box-shadow: var(--sh)
             img
                 border-radius: 10px
                 height: 100%
@@ -82,13 +88,13 @@ article
     max-width: 700px
     margin: 10px auto
     padding: 10px
-    background-color: #fff
+    background-color: var(--color)
     border-radius: 10px
 
     em code
         padding: 10px
     code
-        background-color: #dde
+        background-color: var(--colorx)
         padding: 5px
         border-radius: 10px
         font-size: small
@@ -98,23 +104,56 @@ article
 
 footer
     display: flex
-    height: max-content
-    align-items: flex-start
-    justify-content: space-around
-    flex-wrap: wrap
+    box-shadow: var(--sh)
+    background-image: linear-gradient(90deg, var(--color-ui), var(--color-uix))
+    color: var(--color)
     padding-top: 20px
-    background-color: #fff
-    box-shadow: -1px -2px 18px rgb(0 0 0 / 10%)
-    div
+    height: max-content
+    margin: 10px
+    border-radius: 10px
+    flex-direction: column
+    .list
+        display: flex
+        flex-direction: column
+        align-items: flex-start
         width: 300px
-        &:nth-child(4)
-
-            min-width: -webkit-fill-available
-            text-align: center
-            padding: 20px
-            box-shadow: 1px 2px 18px rgb(0 0 0 / 10%)
+        margin: 10px
+        b
+            margin-bottom: 20px
+    .logo
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        width: 300px
+        background-color: var(--color)
+        border-radius: 10px
+        margin: 10px
+        &-text
+            font-size: xxx-large
+            justify-content: center
+            flex-direction: row
+            display: flex
+            margin: 0 auto
+            padding: 1rem
+        &-footer
+            align-items: center
+            justify-content: center
+            flex-direction: row
+            display: flex
+            color: var(--color-ui)
+            margin: 0 auto
+            a
+                color: var(--color-ui)
+    .\@
+        padding: 10px
+        text-align: center
+        margin: 10px
+        box-shadow: var(--sh)
+        border-radius: 10px
+        border: 3px solid var(--color)
 
     a
+        color: var(--color)
         padding: 5px 0
 @media only screen and  (max-width: 500px  )
     header
@@ -128,13 +167,13 @@ footer
 
 .btn
     border-radius: 10px
-    background-color: #0070f3
-    color: #fff
+    background-color: var(--color-ui)
+    color: var(--color)
     padding: 10px
     margin: 10px
     width: max-content
-    background-image: linear-gradient(to right, #03a9f4, #5b5ef3)
+    background-image: var(--color-lg-ui)
 .text-Ui
     color: transparent
-    background-image: linear-gradient(to right,#03a9f4,#5b5ef3)
+    background-image: var(--color-lg-ui)
     -webkit-background-clip: text

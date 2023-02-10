@@ -11,21 +11,13 @@ export const siteTitle = 'Scrapis blog'
                     )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
                 />  */}
 export default function Layout({ children, home }) {
-    let style = {
-        footerList: {
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'flex-start',
-            width: '300px',
-            margin: '10px'
-        }
-    }
+
     return (
         <>
             <nav>
                 <header>
                     <Link href='/' passHref className='box row' style={{ fontSize: 'xx-large' }}>
-                        <b  className='text-Ui' >سكر</b>
+                        <b className='text-Ui' >سكر</b>
                         <b style={{ color: '#000' }}>ابي</b>
                     </Link>
 
@@ -39,27 +31,36 @@ export default function Layout({ children, home }) {
             <main>
                 {children}
             </main>
-            <footer>
-                <div style={style.footerList}>
-                    <b>روابط سريعة</b>
-                    <Lists data={footer.fast} />
-                </div>
-                <div style={style.footerList}>
-                    <b>روابط تعليمية</b>
-                    <Lists data={footer.learn} />
-                </div>
-                <div >
-                    <p>هذا الموقع برعاية 🤑</p>
-                    <a href='https://ktsyr1.netlify.app' >
-                    قتيبة 🥰
-                    </a>
-                </div>
-                <div>جميع الحقوق محفوظة  scrapi lab @2023</div>
-            </footer>
+            <Footer />
         </>
     )
 }
+function Footer() {
+    return (
+        <footer>
+            <div className='box grid'>
+                <div className='logo'  >
+                    <div className=' logo-text' style={{ fontSize: 'xxx-large' }}>
+                        <b className='text-Ui' >سكر</b>
+                        <b style={{ color: '#000' }}>ابي</b>
+                    </div>
+                    <div className='logo-footer '>
+                        <p style={{ marginLeft: '10px' }}>    برعاية  </p>
+                        <a href='https://ktsyr1.netlify.app' >
+                            قتيبة
+                        </a>
+                    </div>
+                </div>
+                <div className='list' >
+                    <b>روابط سريعة</b>
+                    <Lists data={footer.fast} />
+                </div>
 
+            </div>
+            <div className='@'>جميع الحقوق محفوظة  scrapi lab @2023</div>
+        </footer>
+    )
+}
 function Lists({ data }) {
     return (
         <>

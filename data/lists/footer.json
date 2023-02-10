@@ -1,26 +1,12 @@
 {
-    "learn": [
-        {
-            "title": "برمجة الويب",
-            "slug": "/posts/web-dev"
-        },
-        {
-            "title": "تصميم وبرمجة الواجهات",
-            "slug": "/posts/frontend"
-        },
-        {
-            "title": "برمجة الخوادم backend",
-            "slug": "/posts/backend"
-        }
-    ],
     "fast": [
         {
             "title": "الرئيسية",
             "slug": "/"
         },
         {
-            "title": "الجديد",
-            "slug": "/#"
+            "title": "برمجة الويب",
+            "slug": "/posts/web-dev"
         }
     ]
 }
