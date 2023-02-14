@@ -25,7 +25,7 @@ import html from 'remark-html'
 //         ...matterResult.data
 //     }
 // }
-const postsDirectory = path.join(process.cwd(), 'data/posts')
+const postsDirectory = path.join(process.cwd(), 'data/dev')
 
 export function getSortedPostsData() {
     // Get file names under /posts

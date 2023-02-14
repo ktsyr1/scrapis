@@ -20,14 +20,17 @@ export default function Card({ id, date, title, image }) {
  * @returns 
  */
 export function Courses({ data }) {
-    return (
-        <>
-            <h2>الكورسات التعليمية</h2> 
-            <div className='cards ' >
-                {data?.map((one, i) => <Course key={i} {...one} />)}
-            </div>
-        </>
-    )
+    if (data?.length > 0) {
+
+        return (
+            <>
+                <h2>الكورسات التعليمية</h2>
+                <div className='cards ' >
+                    {data?.map((one, i) => <Course key={i} {...one} />)}
+                </div>
+            </>
+        )
+    } else return <></>
 }
 export function Course({ title, mr, href, note }) {
     let domian = href.replace('https://', '').replace('http://', '').replace('www.', '').split('/')[0]
