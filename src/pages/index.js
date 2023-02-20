@@ -1,10 +1,14 @@
-import { BsCode } from 'react-icons/bs';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import Date from '../theme/date';
 import { getSortedPostsData } from '../lib/posts';
 import SEO from 'lib/SEO';
-
+// icons 
+import { BsCode, BsCodeSquare } from 'react-icons/bs';
+import { GrProjects } from 'react-icons/gr';
+import { SiFreelancer } from 'react-icons/si';
+import { MdProductionQuantityLimits, MdMiscellaneousServices } from 'react-icons/md';
 export async function getStaticProps() {
     const allPostsData = getSortedPostsData()
     return { props: { allPostsData } }
@@ -15,24 +19,28 @@ export default function Home({ allPostsData }) {
         {
             title: 'البرمجة',
             about: '',
-            url: '#',
-            // Icon: BsCode
+            url: '#dev',
+            Icon: <BsCodeSquare />
         }, {
             title: 'افكار المشاريع',
             about: '',
-            url: '#'
+            url: '#project',
+            Icon: <GrProjects />
         }, {
             title: 'العمل الحر',
             about: '',
-            url: '#'
+            url: '#freelancer',
+            Icon: <SiFreelancer />
         }, {
             title: 'المنتجات',
             about: '',
-            url: '#'
+            url: '#product',
+            Icon: <MdProductionQuantityLimits />
         }, {
             title: 'الخدمات',
             about: '',
-            url: '#'
+            url: '#services',
+            Icon: <MdMiscellaneousServices />
         }
     ]
     return (
@@ -41,12 +49,12 @@ export default function Home({ allPostsData }) {
             {/* Hero  */}
             <Hero />
             <br />
-            <div className='cards'>
+            <div className='cards' style={{ minHeight: '20rem' }}>
                 <h2 style={{ width: "100%" }}>اهم الاقسام</h2>
                 {appListsInfo.map(({ url, title, Icon }) => {
                     return (
-                        <Link href={`/posts/${url}`} key={title} passHref style={{ width: '150px' }} className='aitem box h-8 j'>
-                            {/* <Icon /> */}
+                        <Link href={`/${url}`} key={title} passHref style={{ width: '150px' }} className='aitem box h-8 j col icon-home'>
+                            {Icon}
                             <b> {title}</b>
                             {/* <p> {about} </p> */}
                         </Link>
