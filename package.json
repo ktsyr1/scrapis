@@ -2,8 +2,7 @@
     "private": true,
     "scripts": {
         "dev": "next dev",
-        "push": "git add . && git commit -m 'Update' && git push origin]",
-        "deploy": "git push && netlify watch",
+        "deploy": "git add . && git commit -m 'UpdateCommitAuto' && git push origin && netlify watch",
         "build": "next build",
         "lint": "next lint",
         "start": "next start -p 3200"
