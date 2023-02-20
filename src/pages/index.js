@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import { BsCode } from 'react-icons/bs';
 import Image from 'next/image';
 import Link from 'next/link';
 import Date from '../theme/date';
@@ -16,7 +16,7 @@ export default function Home({ allPostsData }) {
             title: 'البرمجة',
             about: '',
             url: '#',
-            Icon: <BsCode />
+            // Icon: BsCode
         }, {
             title: 'افكار المشاريع',
             about: '',
@@ -43,11 +43,12 @@ export default function Home({ allPostsData }) {
             <br />
             <div className='cards'>
                 <h2 style={{ width: "100%" }}>اهم الاقسام</h2>
-                {appListsInfo.map(({ url, title, about }) => {
+                {appListsInfo.map(({ url, title, Icon }) => {
                     return (
                         <Link href={`/posts/${url}`} key={title} passHref style={{ width: '150px' }} className='aitem box h-8 j'>
+                            {/* <Icon /> */}
                             <b> {title}</b>
-                            <p> {about} </p>
+                            {/* <p> {about} </p> */}
                         </Link>
                     )
                 })}
