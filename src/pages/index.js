@@ -11,12 +11,47 @@ export async function getStaticProps() {
 }
 
 export default function Home({ allPostsData }) {
+    let appListsInfo = [
+        {
+            title: 'البرمجة',
+            about: '',
+            url: '#',
+            Icon: <BsCode />
+        }, {
+            title: 'افكار المشاريع',
+            about: '',
+            url: '#'
+        }, {
+            title: 'العمل الحر',
+            about: '',
+            url: '#'
+        }, {
+            title: 'المنتجات',
+            about: '',
+            url: '#'
+        }, {
+            title: 'الخدمات',
+            about: '',
+            url: '#'
+        }
+    ]
     return (
         <div>
             <SEO />
             {/* Hero  */}
             <Hero />
             <br />
+            <div className='cards'>
+                <h2 style={{ width: "100%" }}>اهم الاقسام</h2>
+                {appListsInfo.map(({ url, title, about }) => {
+                    return (
+                        <Link href={`/posts/${url}`} key={title} passHref style={{ width: '150px' }} className='aitem box h-8 j'>
+                            <b> {title}</b>
+                            <p> {about} </p>
+                        </Link>
+                    )
+                })}
+            </div>
             <div className='cards'>
                 <h2 style={{ width: "100%" }}>اخر المقالات</h2>
                 {allPostsData.map((post) => <Card {...post} key={post.id} />)}

@@ -2,6 +2,8 @@
     "private": true,
     "scripts": {
         "dev": "next dev",
+        "push": "git add . && git commit -m 'Update' && git push origin]",
+        "deploy": "git push && netlify watch",
         "build": "next build",
         "lint": "next lint",
         "start": "next start -p 3200"
@@ -19,6 +21,7 @@
         "nprogress": "^0.2.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
+        "react-icons": "^4.7.1",
         "remark": "^14.0.2",
         "remark-html": "^15.0.1",
         "sharp": "^0.30.2"
