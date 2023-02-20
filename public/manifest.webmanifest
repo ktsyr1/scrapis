@@ -1,5 +1,4 @@
 {
-  
   "dir": "rtl",
   "lang": "ar",
   "name": "scrapi - سكرابي",
@@ -9,24 +8,33 @@
   "scope": "/",
   "background_color": "#fff",
   "theme_color": "#fff",
-  "display": "fullscreen",
-  "orientation": "portrait",
+  "display": "standalone",
+  "orientation": "landscape-primary",
   "icons": [
     {
       "src": "./images/logo.png",
       "sizes": "110x110",
       "type": "image/png",
       "purpose": "any maskable"
-    } ,{
+    },
+    {
       "src": "./images/logo.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
-    } ,{
+    },
+    {
       "src": "./images/logo.png",
       "sizes": "144x144",
       "type": "image/png",
       "purpose": "any maskable"
-    } 
+    }
+  ],
+  "categories": [
+    "business"
+  ],
+  "display_override": [
+    "fullscreen",
+    "standalone"
   ]
-} 
+}
