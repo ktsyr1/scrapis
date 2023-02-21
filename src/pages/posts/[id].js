@@ -4,6 +4,7 @@ import Image from 'next/image';
 import SEO from 'lib/SEO';
 import { useEffect, useState } from 'react';
 import Card, { Courses } from 'theme/card';
+import { GrEdit } from 'react-icons/gr';
 
 export async function getStaticPaths() {
     const paths = getAllPostIds()
@@ -15,7 +16,7 @@ export async function getStaticProps({ params }) {
 }
 export default function Post({ postData }) {
     let [time, setTime] = useState(Math.floor(postData.contentHtml.split(' ').length / 1.5 / 60))
-
+    // document.getElementById("myElement")
     return (
         <article>
             <SEO
@@ -31,6 +32,7 @@ export default function Post({ postData }) {
                     <Icons.read />
                     <span style={{ color: time < 2 ? '#03a9f4' : '#00d500' }}>{time} دقيقة</span>
                 </p>
+                <GrEdit class="p-0" onClick={() => document.querySelector("article").contentEditable = true} />
             </div>
             <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
             <Courses data={postData?.courses} />
