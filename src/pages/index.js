@@ -29,7 +29,7 @@ export default function Home({ allPostsData }) {
         }, {
             title: 'العمل الحر',
             about: '',
-            url: '#freelancer',
+            url: 'posts/freelancer',
             Icon: <SiFreelancer />
         }, {
             title: 'المنتجات',
