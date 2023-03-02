@@ -5,7 +5,7 @@ import Date from '../theme/date';
 import { getSortedPostsData } from '../lib/posts';
 import SEO from 'lib/SEO';
 // icons 
-import { BsCode, BsCodeSquare } from 'react-icons/bs';
+import { BsCode, BsCodeSquare, BsMailbox } from 'react-icons/bs';
 import { GrProjects } from 'react-icons/gr';
 import { SiFreelancer } from 'react-icons/si';
 import { MdProductionQuantityLimits, MdMiscellaneousServices } from 'react-icons/md';
@@ -68,33 +68,31 @@ export default function Home({ allPostsData }) {
         </div>
     )
 }
-function Hero() {
-    let list = [
-        'اختر مسارك وتعلم',
-        'الكثير من الافكار المشاريع الابداعية',
-        "ادوات تساعدك في بناء مشاريعك",
-        "استشارات مختصة في مشاريع الويب",
-        "ابداع لا حدود له"
-    ]
+function Hero() { 
     return (
         <div className='hero'>
             <div className='aitem box grid p-4 space' style={{ maxWidth: 700, margin: '0 auto' }}>
                 {/* content */}
                 <div className='box col space'>
                     <h1>
-                        <b className='text-Ui' >سكر</b>
-                        <b >ابي</b>
+                        <b >منصة
+                            <b className='text-Ui'> سكر</b>
+                            ابي</b>
                     </h1>
-                    <ul>
-                        {list.map((a, i) => <li className='R' key={i}>{a}</li>)}
-                    </ul>
-
-                    <Link href={'/posts/web-dev'} className='btn ' >ابداء التعلم</Link>
+                    <p>
+                        انطلق في رحلة تعلم البرمجة واستكشف عددًا لا يحصى من أفكار المشاريع التقنية والأدوات القوية لإحياء مشاريعك. استفد من الاستشارات المتخصصة لمشاريعك القائمة على الويب وأطلق العنان لإبداع لا حدود له معنا.
+                    </p>
+                    <div className='newsletter'>
+                        <BsMailbox />
+                        <input placeholder='القائمة البريدية' />
+                        <button className='btn' >اشتراك</button>
+                    </div>
+                    {/* <Link href={'/posts/web-dev'} className='btn ' >ابداء التعلم</Link> */}
                 </div>
                 {/* image */}
-                <Image src={'/images/Hero.png'} alt='Hero image' loading="lazy" width={320} height={225} className="md-none sm-none" />
+                {/* <Image src={'/images/Hero.png'} alt='Hero image' loading="lazy" width={320} height={225} className="md-none sm-none" /> */}
             </div>
-        </div>
+        </div >
     )
 }
 function Card({ id, date, title, image }) {

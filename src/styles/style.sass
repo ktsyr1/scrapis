@@ -52,7 +52,10 @@ nav
 main
     margin-top: 120px
     .hero
-        background-image: linear-gradient(360deg, var(--colorx), #c7e1ff, var(--colorx) )
+        /* background-image: linear-gradient(1turn,var(--colorx),#c7e1ff,var(--colorx)); */
+        background-color: #fff
+        margin-top: -50px
+        text-align: center
         h1
             font-size: 3rem
     .cards
@@ -173,6 +176,7 @@ footer
     margin: 10px
     width: max-content
     background-image: var(--color-lg-ui)
+    border: 0
 .text-Ui
     color: transparent
     background-image: var(--color-lg-ui)
@@ -182,9 +186,22 @@ svg
     fill: var(--color-ui)
     padding: 5px
     width: 32px
+    height: -webkit-fill-available
     path
         stroke: var(--color-ui)
 .icon-home
     svg
         width: 50px
         height: 50px
+.newsletter
+    background-color: #eee
+    display: flex
+    margin: auto
+    border-radius: 10px
+    padding: 0 10px 
+    align-items: center
+    input
+        border: 0
+        font-size: initial
+        background-color: #eee
+        padding: 10px
