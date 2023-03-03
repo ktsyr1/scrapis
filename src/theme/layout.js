@@ -40,7 +40,7 @@ function Footer() {
         <footer>
             <div className='box grid'>
                 <div className='logo'  >
-                    <div className=' logo-text' style={{ fontSize: 'xxx-large' }}>
+                    <div className=' logo-text' style={{ fontSize: 'large' }}>
                         <b className='text-Ui' >سكر</b>
                         <b style={{ color: '#000' }}>ابي</b>
                     </div>
@@ -51,10 +51,10 @@ function Footer() {
                         </a>
                     </div>
                 </div>
-                <div className='list' >
+                {/* <div className='list' >
                     <b>روابط سريعة</b>
                     <Lists data={footer.fast} />
-                </div>
+                </div> */}
 
             </div>
             <div className='@'>جميع الحقوق محفوظة  scrapi lab @2023</div>
