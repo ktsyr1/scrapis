@@ -82,12 +82,15 @@ function Hero() {
                     <p>
                         انطلق في رحلة تعلم البرمجة واستكشف عددًا لا يحصى من أفكار المشاريع التقنية والأدوات القوية لإحياء مشاريعك. استفد من الاستشارات المتخصصة لمشاريعك القائمة على الويب وأطلق العنان لإبداع لا حدود له معنا.
                     </p>
-                    <div className='newsletter'>
+                    {/* <div className='newsletter'>
                         <BsMailbox />
                         <input placeholder='القائمة البريدية' />
                         <button className='btn' >اشتراك</button>
-                    </div>
-                    {/* <Link href={'/posts/web-dev'} className='btn ' >ابداء التعلم</Link> */}
+                    </div> */}
+                    {/* <div className="box row">
+                        <Link href={'/posts/web-dev'} className='btn ' >عالم الويب</Link>
+                        <Link href={'#'} className='btn ' >افكار المشاريع</Link>
+                    </div> */}
                 </div>
                 {/* image */}
                 {/* <Image src={'/images/Hero.png'} alt='Hero image' loading="lazy" width={320} height={225} className="md-none sm-none" /> */}
