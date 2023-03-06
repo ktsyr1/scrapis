@@ -1,5 +1,5 @@
 import { useState } from "react";
-import axios from "axios";
+// import axios from "axios";
 
 function NewsletterForm() {
     const [email, setEmail] = useState("");
@@ -7,15 +7,15 @@ function NewsletterForm() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios
-            .post("/api/subscribe", { email })
-            .then((response) => {
-                setMessage(response.data);
-            })
-            .catch((error) => {
-                console.error(error);
-                setMessage("Error subscribing. Please try again later.");
-            });
+        // axios
+        //     .post("/api/subscribe", { email })
+        //     .then((response) => {
+        //         setMessage(response.data);
+        //     })
+        //     .catch((error) => {
+        //         console.error(error);
+        //         setMessage("Error subscribing. Please try again later.");
+        //     });
         setEmail("");
     };
 
